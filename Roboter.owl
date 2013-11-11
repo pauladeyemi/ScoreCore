@@ -130,14 +130,14 @@
     <!-- http://www.owl-ontologies.com/Ontology1384171282.owl#Parts -->
 
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Parts">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1384171282.owl#Roboter"/>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1384171282.owl#Robot"/>
     </owl:Class>
     
 
 
-    <!-- http://www.owl-ontologies.com/Ontology1384171282.owl#Roboter -->
+    <!-- http://www.owl-ontologies.com/Ontology1384171282.owl#Robot -->
 
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Roboter"/>
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Robot"/>
     
 
 
@@ -160,7 +160,7 @@
     <!-- http://www.owl-ontologies.com/Ontology1384171282.owl#Value -->
 
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Value">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1384171282.owl#Roboter"/>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1384171282.owl#Robot"/>
     </owl:Class>
 </rdf:RDF>
 
