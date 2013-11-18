@@ -55,7 +55,6 @@
     
 
 
-<<<<<<< HEAD
     <!-- http://www.owl-ontologies.com/Ontology1384171282.owl#Analog -->
 
     <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Analog">
@@ -68,22 +67,10 @@
 
     <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Digital">
         <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1384171282.owl#Abstract_Parts"/>
-=======
-    <!-- http://www.owl-ontologies.com/Ontology1384171282.owl#name -->
-
-    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#name">
-        <rdfs:domain>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.owl-ontologies.com/Ontology1384171282.owl#name"/>
-                <owl:someValuesFrom rdf:resource="&xsd;string"/>
-            </owl:Restriction>
-        </rdfs:domain>
->>>>>>> 0ee4eadd2c25bd1f7875618fedab35c855da6c6c
     </owl:DatatypeProperty>
     
 
 
-<<<<<<< HEAD
     <!-- http://www.owl-ontologies.com/Ontology1384171282.owl#Extern -->
 
     <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Extern">
@@ -105,8 +92,6 @@
     
 
 
-=======
->>>>>>> 0ee4eadd2c25bd1f7875618fedab35c855da6c6c
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -229,12 +214,11 @@
     <!-- http://www.owl-ontologies.com/Ontology1384171282.owl#Parts -->
 
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Parts">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1384171282.owl#Robot"/>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1384171282.owl#Roboter"/>
     </owl:Class>
     
 
 
-<<<<<<< HEAD
     <!-- http://www.owl-ontologies.com/Ontology1384171282.owl#Pressure_Sensor -->
 
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Pressure_Sensor">
@@ -244,11 +228,8 @@
 
 
     <!-- http://www.owl-ontologies.com/Ontology1384171282.owl#Roboter -->
-=======
-    <!-- http://www.owl-ontologies.com/Ontology1384171282.owl#Robot -->
->>>>>>> 0ee4eadd2c25bd1f7875618fedab35c855da6c6c
 
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Robot"/>
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Roboter"/>
     
 
 
@@ -270,7 +251,6 @@
 
     <!-- http://www.owl-ontologies.com/Ontology1384171282.owl#Sound_Sensor -->
 
-<<<<<<< HEAD
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Sound_Sensor">
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1384171282.owl#Sensor"/>
     </owl:Class>
@@ -297,10 +277,6 @@
 
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Voltage_Sensor">
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1384171282.owl#Sensor"/>
-=======
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Value">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1384171282.owl#Robot"/>
->>>>>>> 0ee4eadd2c25bd1f7875618fedab35c855da6c6c
     </owl:Class>
 </rdf:RDF>
 
