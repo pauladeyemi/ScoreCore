@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<<<<<<< HEAD
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
         <uri id="Automatically generated entry, Timestamp=1384775794031" name="http://www.owl-ontologies.com/Ontology1384171282.owl" uri="Roboter.owl"/>
     </group>
 </catalog>
+=======
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog"/>
+>>>>>>> 0ee4eadd2c25bd1f7875618fedab35c855da6c6c
