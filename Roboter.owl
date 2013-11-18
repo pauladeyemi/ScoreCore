@@ -55,7 +55,6 @@
     
 
 
-<<<<<<< HEAD
     <!-- http://www.owl-ontologies.com/Ontology1384171282.owl#Acceleration -->
 
     <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Acceleration">
@@ -64,8 +63,6 @@
     
 
 
-=======
->>>>>>> d44fda1e64752a3e2c17f4644708c853e60aa194
     <!-- http://www.owl-ontologies.com/Ontology1384171282.owl#Analog -->
 
     <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Analog">
@@ -74,17 +71,10 @@
     
 
 
-<<<<<<< HEAD
     <!-- http://www.owl-ontologies.com/Ontology1384171282.owl#Contact -->
 
     <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Contact">
         <rdfs:range rdf:resource="&xsd;boolean"/>
-=======
-    <!-- http://www.owl-ontologies.com/Ontology1384171282.owl#Battery_Charge -->
-
-    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Battery_Charge">
-        <rdfs:range rdf:resource="&xsd;integer"/>
->>>>>>> d44fda1e64752a3e2c17f4644708c853e60aa194
     </owl:DatatypeProperty>
     
 
@@ -97,7 +87,6 @@
     
 
 
-<<<<<<< HEAD
     <!-- http://www.owl-ontologies.com/Ontology1384171282.owl#Distance -->
 
     <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Distance">
@@ -106,8 +95,6 @@
     
 
 
-=======
->>>>>>> d44fda1e64752a3e2c17f4644708c853e60aa194
     <!-- http://www.owl-ontologies.com/Ontology1384171282.owl#Extern -->
 
     <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Extern">
@@ -117,7 +104,6 @@
     
 
 
-<<<<<<< HEAD
     <!-- http://www.owl-ontologies.com/Ontology1384171282.owl#GPS -->
 
     <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#GPS">
@@ -126,15 +112,12 @@
     
 
 
-=======
->>>>>>> d44fda1e64752a3e2c17f4644708c853e60aa194
     <!-- http://www.owl-ontologies.com/Ontology1384171282.owl#Intern -->
 
     <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Intern"/>
     
 
 
-<<<<<<< HEAD
     <!-- http://www.owl-ontologies.com/Ontology1384171282.owl#Light -->
 
     <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Light">
@@ -193,12 +176,6 @@
 
     <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Voltage">
         <rdfs:range rdf:resource="&xsd;double"/>
-=======
-    <!-- http://www.owl-ontologies.com/Ontology1384171282.owl#Position -->
-
-    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Position">
-        <rdfs:range rdf:resource="&xsd;string"/>
->>>>>>> d44fda1e64752a3e2c17f4644708c853e60aa194
     </owl:DatatypeProperty>
     
 
@@ -240,23 +217,9 @@
     
 
 
-<<<<<<< HEAD
     <!-- http://www.owl-ontologies.com/Ontology1384171282.owl#Batterie -->
 
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Batterie">
-=======
-    <!-- http://www.owl-ontologies.com/Ontology1384171282.owl#Alkaline -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Alkaline">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1384171282.owl#Battery"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.owl-ontologies.com/Ontology1384171282.owl#Battery -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Battery">
->>>>>>> d44fda1e64752a3e2c17f4644708c853e60aa194
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1384171282.owl#Parts"/>
     </owl:Class>
     
@@ -304,17 +267,6 @@
     
 
 
-<<<<<<< HEAD
-=======
-    <!-- http://www.owl-ontologies.com/Ontology1384171282.owl#Fuel_Cell -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Fuel_Cell">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1384171282.owl#Battery"/>
-    </owl:Class>
-    
-
-
->>>>>>> d44fda1e64752a3e2c17f4644708c853e60aa194
     <!-- http://www.owl-ontologies.com/Ontology1384171282.owl#Grappler -->
 
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Grappler">
@@ -331,17 +283,6 @@
     
 
 
-<<<<<<< HEAD
-=======
-    <!-- http://www.owl-ontologies.com/Ontology1384171282.owl#Lithium -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Lithium">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1384171282.owl#Battery"/>
-    </owl:Class>
-    
-
-
->>>>>>> d44fda1e64752a3e2c17f4644708c853e60aa194
     <!-- http://www.owl-ontologies.com/Ontology1384171282.owl#Navigation_Sensor -->
 
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Navigation_Sensor">
@@ -350,25 +291,6 @@
     
 
 
-<<<<<<< HEAD
-=======
-    <!-- http://www.owl-ontologies.com/Ontology1384171282.owl#Nickel_Cadmium -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Nickel_Cadmium">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1384171282.owl#Battery"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.owl-ontologies.com/Ontology1384171282.owl#Other_Battery -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Other_Battery">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1384171282.owl#Battery"/>
-    </owl:Class>
-    
-
-
->>>>>>> d44fda1e64752a3e2c17f4644708c853e60aa194
     <!-- http://www.owl-ontologies.com/Ontology1384171282.owl#Other_Sensor -->
 
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Other_Sensor">
@@ -447,7 +369,6 @@
     
 
 
-<<<<<<< HEAD
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -473,13 +394,6 @@
             <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Voltage_Sensor"/>
         </owl:members>
     </rdf:Description>
-=======
-    <!-- http://www.owl-ontologies.com/Ontology1384171282.owl#Wheels -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Wheels">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1384171282.owl#Parts"/>
-    </owl:Class>
->>>>>>> d44fda1e64752a3e2c17f4644708c853e60aa194
 </rdf:RDF>
 
 
