@@ -55,6 +55,14 @@
     
 
 
+    <!-- http://www.owl-ontologies.com/Ontology1384171282.owl#Acceleration -->
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Acceleration">
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://www.owl-ontologies.com/Ontology1384171282.owl#Analog -->
 
     <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Analog">
@@ -63,10 +71,10 @@
     
 
 
-    <!-- http://www.owl-ontologies.com/Ontology1384171282.owl#Battery_Charge -->
+    <!-- http://www.owl-ontologies.com/Ontology1384171282.owl#Contact -->
 
-    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Battery_Charge">
-        <rdfs:range rdf:resource="&xsd;integer"/>
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Contact">
+        <rdfs:range rdf:resource="&xsd;boolean"/>
     </owl:DatatypeProperty>
     
 
@@ -75,6 +83,14 @@
 
     <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Digital">
         <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1384171282.owl#Abstract_Parts"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1384171282.owl#Distance -->
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Distance">
+        <rdfs:range rdf:resource="&xsd;double"/>
     </owl:DatatypeProperty>
     
 
@@ -88,16 +104,78 @@
     
 
 
+    <!-- http://www.owl-ontologies.com/Ontology1384171282.owl#GPS -->
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#GPS">
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://www.owl-ontologies.com/Ontology1384171282.owl#Intern -->
 
     <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Intern"/>
     
 
 
+    <!-- http://www.owl-ontologies.com/Ontology1384171282.owl#Light -->
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Light">
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1384171282.owl#Navigation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Navigation">
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://www.owl-ontologies.com/Ontology1384171282.owl#Position -->
 
-    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Position">
-        <rdfs:range rdf:resource="&xsd;string"/>
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Position"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1384171282.owl#Pressure -->
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Pressure">
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1384171282.owl#Sound -->
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Sound">
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1384171282.owl#Temperature -->
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Temperature">
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1384171282.owl#Tilt -->
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Tilt">
+        <rdfs:range rdf:resource="&xsd;positiveInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1384171282.owl#Voltage -->
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Voltage">
+        <rdfs:range rdf:resource="&xsd;double"/>
     </owl:DatatypeProperty>
     
 
@@ -139,17 +217,9 @@
     
 
 
-    <!-- http://www.owl-ontologies.com/Ontology1384171282.owl#Alkaline -->
+    <!-- http://www.owl-ontologies.com/Ontology1384171282.owl#Batterie -->
 
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Alkaline">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1384171282.owl#Battery"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.owl-ontologies.com/Ontology1384171282.owl#Battery -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Battery">
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Batterie">
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1384171282.owl#Parts"/>
     </owl:Class>
     
@@ -197,14 +267,6 @@
     
 
 
-    <!-- http://www.owl-ontologies.com/Ontology1384171282.owl#Fuel_Cell -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Fuel_Cell">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1384171282.owl#Battery"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.owl-ontologies.com/Ontology1384171282.owl#Grappler -->
 
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Grappler">
@@ -221,34 +283,10 @@
     
 
 
-    <!-- http://www.owl-ontologies.com/Ontology1384171282.owl#Lithium -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Lithium">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1384171282.owl#Battery"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.owl-ontologies.com/Ontology1384171282.owl#Navigation_Sensor -->
 
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Navigation_Sensor">
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1384171282.owl#Sensor"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.owl-ontologies.com/Ontology1384171282.owl#Nickel_Cadmium -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Nickel_Cadmium">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1384171282.owl#Battery"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.owl-ontologies.com/Ontology1384171282.owl#Other_Battery -->
-
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Other_Battery">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1384171282.owl#Battery"/>
     </owl:Class>
     
 
@@ -331,11 +369,31 @@
     
 
 
-    <!-- http://www.owl-ontologies.com/Ontology1384171282.owl#Wheels -->
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
 
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Wheels">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1384171282.owl#Parts"/>
-    </owl:Class>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Acceleration_Sensor"/>
+            <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Contact_Sensor"/>
+            <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Current_Sensor"/>
+            <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Distance_Sensor"/>
+            <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Light_Sensor"/>
+            <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Navigation_Sensor"/>
+            <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Other_Sensor"/>
+            <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Pressure_Sensor"/>
+            <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Sound_Sensor"/>
+            <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Temperature_Sensor"/>
+            <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Tilt_Sensor"/>
+            <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Voltage_Sensor"/>
+        </owl:members>
+    </rdf:Description>
 </rdf:RDF>
 
 
