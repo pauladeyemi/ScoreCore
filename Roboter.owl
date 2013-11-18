@@ -369,6 +369,14 @@
     
 
 
+    <!-- http://www.owl-ontologies.com/Ontology1384171282.owl#blub -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#blub">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1384171282.owl#Batterie"/>
+    </owl:Class>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
