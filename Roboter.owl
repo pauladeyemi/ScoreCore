@@ -496,6 +496,14 @@
     <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Drive"/>
+            <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Grappler"/>
+            <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Roboter"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
             <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Acceleration_Sensor"/>
             <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Contact_Sensor"/>
             <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Current_Sensor"/>
@@ -508,22 +516,6 @@
             <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Temperature_Sensor"/>
             <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Tilt_Sensor"/>
             <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Voltage_Sensor"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Drive"/>
-            <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Grappler"/>
-            <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Roboter"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Actuator"/>
-            <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Batterie"/>
-            <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Sensor"/>
         </owl:members>
     </rdf:Description>
 </rdf:RDF>
