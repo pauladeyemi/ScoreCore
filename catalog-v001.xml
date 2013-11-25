@@ -1,10 +1,2 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-<<<<<<< HEAD
-        <uri id="Automatically generated entry, Timestamp=1384784453004" name="http://www.owl-ontologies.com/Ontology1384171282.owl" uri="Roboter.owl"/>
-=======
-        <uri id="Automatically generated entry, Timestamp=1384781718939" name="http://www.owl-ontologies.com/Ontology1384171282.owl" uri="Roboter.owl"/>
->>>>>>> 70a845f5aae3d9bbfcafb772bf456fcc26278b2f
-    </group>
-</catalog>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog"/>
