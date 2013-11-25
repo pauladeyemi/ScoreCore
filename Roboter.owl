@@ -38,9 +38,81 @@
     
 
 
-    <!-- http://www.owl-ontologies.com/Ontology1384171282.owl#Name -->
+    <!-- http://www.owl-ontologies.com/Ontology1384171282.owl#has_abstract_part -->
 
-    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Name"/>
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#has_abstract_part">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;InverseFunctionalProperty"/>
+        <owl:inverseOf rdf:resource="http://www.owl-ontologies.com/Ontology1384171282.owl#is_abstract_part_of"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1384171282.owl#has_actuator -->
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#has_actuator">
+        <rdfs:subPropertyOf rdf:resource="http://www.owl-ontologies.com/Ontology1384171282.owl#has_part"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1384171282.owl#has_batterie -->
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#has_batterie">
+        <rdfs:subPropertyOf rdf:resource="http://www.owl-ontologies.com/Ontology1384171282.owl#has_part"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1384171282.owl#has_part -->
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#has_part">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;InverseFunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1384171282.owl#has_sensor -->
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#has_sensor">
+        <rdfs:subPropertyOf rdf:resource="http://www.owl-ontologies.com/Ontology1384171282.owl#has_part"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1384171282.owl#is_abstract_part_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#is_abstract_part_of">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;InverseFunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1384171282.owl#is_actuator -->
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#is_actuator">
+        <rdfs:subPropertyOf rdf:resource="http://www.owl-ontologies.com/Ontology1384171282.owl#is_part_of"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1384171282.owl#is_part_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#is_part_of">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;InverseFunctionalProperty"/>
+        <owl:inverseOf rdf:resource="http://www.owl-ontologies.com/Ontology1384171282.owl#has_part"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1384171282.owl#is_sensor_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#is_sensor_of">
+        <rdfs:subPropertyOf rdf:resource="http://www.owl-ontologies.com/Ontology1384171282.owl#is_part_of"/>
+    </owl:ObjectProperty>
     
 
 
@@ -194,7 +266,13 @@
     <!-- http://www.owl-ontologies.com/Ontology1384171282.owl#Abstract_Parts -->
 
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Abstract_Parts">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1384171282.owl#Roboter"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.owl-ontologies.com/Ontology1384171282.owl#has_part"/>
+                <owl:onClass rdf:resource="http://www.owl-ontologies.com/Ontology1384171282.owl#Parts"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://www.owl-ontologies.com/Ontology1384171282.owl#Parts"/>
     </owl:Class>
     
@@ -212,7 +290,6 @@
 
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Actuator">
         <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1384171282.owl#Parts"/>
-        <owl:disjointWith rdf:resource="http://www.owl-ontologies.com/Ontology1384171282.owl#Sensor"/>
     </owl:Class>
     
 
@@ -302,7 +379,13 @@
     <!-- http://www.owl-ontologies.com/Ontology1384171282.owl#Parts -->
 
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Parts">
-        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1384171282.owl#Roboter"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.owl-ontologies.com/Ontology1384171282.owl#is_part_of"/>
+                <owl:onClass rdf:resource="http://www.owl-ontologies.com/Ontology1384171282.owl#Abstract_Parts"/>
+                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -317,7 +400,23 @@
 
     <!-- http://www.owl-ontologies.com/Ontology1384171282.owl#Roboter -->
 
-    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Roboter"/>
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Roboter">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Abstract_Parts"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.owl-ontologies.com/Ontology1384171282.owl#has_part"/>
+                        <owl:someValuesFrom rdf:resource="http://www.owl-ontologies.com/Ontology1384171282.owl#Actuator"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.owl-ontologies.com/Ontology1384171282.owl#has_part"/>
+                        <owl:someValuesFrom rdf:resource="http://www.owl-ontologies.com/Ontology1384171282.owl#Sensor"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
     
 
 
@@ -372,6 +471,23 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1384171282.owl#Test1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Test1"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // General axioms
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -392,6 +508,22 @@
             <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Temperature_Sensor"/>
             <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Tilt_Sensor"/>
             <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Voltage_Sensor"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Drive"/>
+            <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Grappler"/>
+            <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Roboter"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Actuator"/>
+            <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Batterie"/>
+            <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Sensor"/>
         </owl:members>
     </rdf:Description>
 </rdf:RDF>
