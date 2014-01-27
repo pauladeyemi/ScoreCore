@@ -563,6 +563,14 @@ for example. &quot;front left&quot;, &quot;left back&quot;</rdfs:comment>
     
 
 
+    <!-- http://www.owl-ontologies.com/Ontology1384171282.owl#Camera -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Camera">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1384171282.owl#Sensor"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.owl-ontologies.com/Ontology1384171282.owl#Contact_Sensor -->
 
     <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1384171282.owl#Contact_Sensor">
@@ -664,12 +672,12 @@ for example. &quot;front left&quot;, &quot;left back&quot;</rdfs:comment>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.owl-ontologies.com/Ontology1384171282.owl#has_part"/>
                         <owl:onClass rdf:resource="http://www.owl-ontologies.com/Ontology1384171282.owl#Engine"/>
-                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">3</owl:minQualifiedCardinality>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.owl-ontologies.com/Ontology1384171282.owl#has_part"/>
                         <owl:onClass rdf:resource="http://www.owl-ontologies.com/Ontology1384171282.owl#Tire"/>
-                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">3</owl:qualifiedCardinality>
+                        <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">3</owl:minQualifiedCardinality>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -785,13 +793,13 @@ for example. &quot;front left&quot;, &quot;left back&quot;</rdfs:comment>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.owl-ontologies.com/Ontology1384171282.owl#is_indicator_for"/>
-                <owl:someValuesFrom rdf:resource="http://www.owl-ontologies.com/Ontology1384171282.owl#Abstract_Parts"/>
+                <owl:someValuesFrom rdf:resource="http://www.owl-ontologies.com/Ontology1384171282.owl#Parts"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.owl-ontologies.com/Ontology1384171282.owl#is_indicator_for"/>
-                <owl:someValuesFrom rdf:resource="http://www.owl-ontologies.com/Ontology1384171282.owl#Parts"/>
+                <owl:someValuesFrom rdf:resource="http://www.owl-ontologies.com/Ontology1384171282.owl#Abstract_Parts"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
